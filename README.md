@@ -1,1 +1,1 @@
-# -Automate-IBM-Cloud-Kubernetes-Service-using-Terraform-
+# Automate IBM Cloud Kubernetes Service using Terraform
