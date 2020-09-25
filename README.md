@@ -28,4 +28,10 @@ __NOTE:__ Please restart the device if above command is not executed
 1. Extract the IBM Cloud Provider package to retrieve the binary file.
 1. Create a hidden folder for plug-in
 
-``` mkdir $HOME/.terraform.d/plugins ```
+   ``` mkdir $HOME/.terraform.d/plugins ```
+   
+1. Move the IBM Cloud Provider plug-in into your hidden folder.
+   
+   ``` mv $HOME/Downloads/terraform-provider-ibm* $HOME/.terraform.d/plugins/ ```
+
+   
