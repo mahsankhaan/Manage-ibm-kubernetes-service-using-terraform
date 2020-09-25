@@ -78,8 +78,6 @@ Terraform uses the IBM Cloud Provider plug-in to securely communicate with the I
 
 ## Step 5: Initialize Terraform
 1. Must be in Terraform project directory and run command __terraform init__ . This will initialize terraform in the folder and now we can work with all commands to automate our IBM cloud resources.
-
-
-
+1. Once above step is executed successfully there will be message "Terraform has been successfully initialized!". Otherwise please verify above steps
 
 
