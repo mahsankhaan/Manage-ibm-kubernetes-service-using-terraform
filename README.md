@@ -54,14 +54,14 @@ Terraform uses the IBM Cloud Provider plug-in to securely communicate with the I
    ```
    data "ibm_space" "space" {
      org   = "example.com"
-    space = "dev"
+     space = "dev"
    }
 
    resource "ibm_app" "app" {
      name                 = "my-app"
-    space_guid           = data.ibm_space.space.id
-    app_path             = "hello.zip"
-    wait_timeout_minutes = 90
+     space_guid           = data.ibm_space.space.id
+     app_path             = "hello.zip"
+     wait_timeout_minutes = 90
      buildpack            = "sdk-for-nodejs"
    }
    ```
