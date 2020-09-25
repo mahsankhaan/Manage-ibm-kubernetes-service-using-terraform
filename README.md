@@ -46,5 +46,4 @@ Terraform uses the IBM Cloud Provider plug-in to securely communicate with the I
 variable "ibmcloud_api_key" {}
 
 provider "ibm" {
-  ibmcloud_api_key    = var.ibmcloud_api_key
-}```
+  ibmcloud_api_key    = var.ibmcloud_api_key}```
