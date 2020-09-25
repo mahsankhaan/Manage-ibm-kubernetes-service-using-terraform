@@ -37,10 +37,10 @@ Terraform uses the IBM Cloud Provider plug-in to securely communicate with the I
    ``` mv $HOME/Downloads/terraform-provider-ibm* $HOME/.terraform.d/plugins/ ```
 
    
-## Step 3 : Let's create IBM resources 
+## Step 3 : Prepare Terraform environment
 1. Create [IBM Cloud API key](https://cloud.ibm.com/docs/account?topic=account-userapikey#create_user_key)
 1. Then create a Terraform project directory. The directory will hold all your Terraform configuration files that you create as part of this tutorial. 
-1. Now in project directory, create a __terraform.tfvars__ file and add the __IBM Cloud API key__ that you created earlier. The terraform.tfvars file is a Terraform variables file that you store on local machine. When you initialize the Terraform CLI, all variables that are defined in this file are automatically loaded into Terraform and then can be referenced  in every Terraform configuration file in the same project directory
+1. Now in project directory, create a __terraform.tfvars__ file and add the __IBM Cloud API key__ that was created earlier. The terraform.tfvars file is a Terraform variables file that you store on local machine. When you initialize the Terraform CLI, all variables that are defined in this file are automatically loaded into Terraform and then can be referenced  in every Terraform configuration file in the same project directory
 1. In the same project directory, create a __provider.tf__ file and configure IBM as Terraform provider
 ```
 variable "ibmcloud_api_key" {}
@@ -48,4 +48,20 @@ variable "ibmcloud_api_key" {}
 provider "ibm" {
   ibmcloud_api_key    = var.ibmcloud_api_key
   }
+```
+## Step 4: Lets create IBM Cloud Foundry resource
+1. In the same directory where you stored the __terraform.tfvars__ and __provider.tf__ files, create a Terraform configuration file and name it __configure.tf__
+```
+data "ibm_space" "space" {
+  org   = "example.com"
+  space = "dev"
+}
+
+resource "ibm_app" "app" {
+  name                 = "my-app"
+  space_guid           = data.ibm_space.space.id
+  app_path             = "hello.zip"
+  wait_timeout_minutes = 90
+  buildpack            = "sdk-for-nodejs"
+}
 ```
