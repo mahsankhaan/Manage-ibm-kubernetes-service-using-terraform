@@ -53,7 +53,7 @@ Terraform uses the IBM Cloud Provider plug-in to securely communicate with the I
 1. In the same directory where you stored the __terraform.tfvars__ and __provider.tf__ files, create a Terraform configuration file and name it __configure.tf__
    ```
    data "ibm_space" "space" {
-     org   = "example.com"
+     org   = "mahsankhan@ibm.com"
      space = "dev"
    }
 
