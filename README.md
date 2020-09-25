@@ -24,6 +24,8 @@ Steps :
 __NOTE:__ Please restart the device if above command is not executed
 
 ## Step 2 : Install IBM Cloud Provider plug-in
+Terraform uses the IBM Cloud Provider plug-in to securely communicate with the IBM Cloud REST API. To provision and work with IBM Cloud resources,we must install it.
+
 1. [Download the latest version of the IBM Cloud Provider binary package](https://github.com/IBM-Cloud/terraform-provider-ibm/releases)
 1. Extract the IBM Cloud Provider package to retrieve the binary file.
 1. Create a hidden folder for plug-in
@@ -35,3 +37,7 @@ __NOTE:__ Please restart the device if above command is not executed
    ``` mv $HOME/Downloads/terraform-provider-ibm* $HOME/.terraform.d/plugins/ ```
 
    
+## Step 3 : Let's create IBM resources 
+1. Create [IBM Cloud API key](https://cloud.ibm.com/docs/account?topic=account-userapikey#create_user_key)
+1. Then create a Terraform project directory. The directory will hold all your Terraform configuration files that you create as part of this tutorial. 
+1. Now in project directory, create a __terraform.tfvars__ file and add the __IBM Cloud API key__ that you created earlier. The terraform.tfvars file is a Terraform variables file that you store on local machine. When you initialize the Terraform CLI, all variables that are defined in this file are automatically loaded into Terraform and then can be referenced  in every Terraform configuration file in the same project directory
