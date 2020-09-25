@@ -35,6 +35,8 @@ Terraform uses the IBM Cloud Provider plug-in to securely communicate with the I
 1. Move the IBM Cloud Provider plug-in into your hidden folder.
    
    ``` mv $HOME/Downloads/terraform-provider-ibm* $HOME/.terraform.d/plugins/ ```
+ 
+__NOTE :__ If there is any issues in the above step kindly manually place binary files under plugins like below image.
 
    
 ## Step 3 : Prepare Terraform environment
