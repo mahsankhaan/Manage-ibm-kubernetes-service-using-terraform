@@ -39,7 +39,7 @@ Terraform uses the IBM Cloud Provider plug-in to securely communicate with the I
    
 ## Step 3 : Prepare Terraform environment
 1. Create [IBM Cloud API key](https://cloud.ibm.com/docs/account?topic=account-userapikey#create_user_key)
-1. Then create a Terraform project directory. The directory will hold all your Terraform configuration files that you create as part of this tutorial. 
+1. Then create a Terraform project directory. The directory will hold all Terraform configuration files. (ex terraform_cf)
 1. Now in project directory, create a __terraform.tfvars__ file and add the __IBM Cloud API key__ that was created earlier. The terraform.tfvars file is a Terraform variables file that you store on local machine. When you initialize the Terraform CLI, all variables that are defined in this file are automatically loaded into Terraform and then can be referenced  in every Terraform configuration file in the same project directory
 1. In the same project directory, create a __provider.tf__ file and configure IBM as Terraform provider
    ```
@@ -75,3 +75,11 @@ Terraform uses the IBM Cloud Provider plug-in to securely communicate with the I
     Review the input parameters that you can specify for ibm cloud foundry resource. From [here](https://cloud.ibm.com/docs/terraform?topic=terraform-cloud-foundry-resources#cf-app)
     
  List of all supported configurations for each resource, see [here](https://cloud.ibm.com/docs/terraform?topic=terraform-index-of-terraform-resources-and-data-sources)
+
+## Step 5: Initialize Terraform
+1. Must be in Terraform project directory and run command __terraform init__ . This will initialize terraform in the folder and now we can work with all commands to automate our IBM cloud resources.
+
+
+
+
+
