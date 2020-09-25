@@ -73,4 +73,5 @@ Terraform uses the IBM Cloud Provider plug-in to securely communicate with the I
    __Resource__: Every resource block specifies the IBM Cloud resource that needs to provision.
    
     Review the input parameters that you can specify for ibm cloud foundry resource. From [here](https://cloud.ibm.com/docs/terraform?topic=terraform-cloud-foundry-resources#cf-app)
+    
  List of all supported configurations for each resource, see [here](https://cloud.ibm.com/docs/terraform?topic=terraform-index-of-terraform-resources-and-data-sources)
