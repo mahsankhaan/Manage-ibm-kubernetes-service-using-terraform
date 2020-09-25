@@ -10,7 +10,7 @@ Steps :
 1. Install IBM Cloud Provider plug-in
 
 
-Step 1 : Install the Terraform CLI 
+## Step 1 : Install the Terraform CLI 
 1. Open the terminal and create a folder __terraform__ and navigate into that folder.
 
    ``` mkdir terraform && cd terraform ```
