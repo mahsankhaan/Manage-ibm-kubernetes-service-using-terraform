@@ -13,14 +13,13 @@ Steps :
 Step 1 : Install the Terraform CLI 
 1. Open the terminal and create a folder __terraform__ and navigate into that folder.
 
-``` mkdir terraform && cd terraform ```
+   ``` mkdir terraform && cd terraform ```
 
 1. Extract the Terraform package and copy the binary file into your terraform directory.
 1. Point the __$PATH environment__ variable to Terraform binary file.
 
-``` export PATH=$PATH:$HOME/terraform ```
+   ``` export PATH=$PATH:$HOME/terraform ```
 
 1. Run command __terraform__ to verify that the installation is successful
-
-
+__NOTE:__ Please restart the device if above command is not executed
 
