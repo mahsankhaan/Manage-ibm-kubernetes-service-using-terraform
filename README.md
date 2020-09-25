@@ -42,3 +42,10 @@ Terraform uses the IBM Cloud Provider plug-in to securely communicate with the I
 1. Then create a Terraform project directory. The directory will hold all your Terraform configuration files that you create as part of this tutorial. 
 1. Now in project directory, create a __terraform.tfvars__ file and add the __IBM Cloud API key__ that you created earlier. The terraform.tfvars file is a Terraform variables file that you store on local machine. When you initialize the Terraform CLI, all variables that are defined in this file are automatically loaded into Terraform and then can be referenced  in every Terraform configuration file in the same project directory
 1. In the same project directory, create a __provider.tf__ file and configure IBM as Terraform provider
+```
+bash
+variable "ibmcloud_api_key" {}
+
+provider "ibm" {
+  ibmcloud_api_key    = var.ibmcloud_api_key
+}```
