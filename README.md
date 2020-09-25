@@ -14,7 +14,7 @@ Steps :
 1. Open the terminal and create a folder __terraform__ and navigate into that folder.
 
    ``` mkdir terraform && cd terraform ```
-
+1. [Download the Terraform CLI version 0.12.x](https://releases.hashicorp.com/terraform/)
 1. Extract the Terraform package and copy the binary file into your terraform directory.
 1. Point the __$PATH environment__ variable to Terraform binary file.
 
@@ -23,3 +23,9 @@ Steps :
 1. Run command __terraform__ to verify that the installation is successful
 __NOTE:__ Please restart the device if above command is not executed
 
+## Step 2 : Install IBM Cloud Provider plug-in
+1. [Download the latest version of the IBM Cloud Provider binary package](https://github.com/IBM-Cloud/terraform-provider-ibm/releases)
+1. Extract the IBM Cloud Provider package to retrieve the binary file.
+1. Create a hidden folder for plug-in
+
+``` mkdir $HOME/.terraform.d/plugins ```
