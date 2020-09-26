@@ -14,7 +14,7 @@ Steps :
 1. Open the terminal and create a folder __terraform__ and navigate into that folder.
 
    ``` mkdir terraform && cd terraform ```
-1. [Download Terraform v0.13.3](https://www.terraform.io/downloads.html)
+1. [Download Terraform v0.12.x](https://www.terraform.io/downloads.html)
 1. Extract the Terraform package and copy the binary file into your terraform directory.
 1. Point the __$PATH environment__ variable to Terraform binary file.
 
