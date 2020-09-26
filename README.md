@@ -86,7 +86,9 @@ resource "ibm_app" "app" {
 1. Once above step is executed successfully there will be message "Terraform has been successfully initialized!". If there is any issues please verify above steps
 
 ## 6: Execute Plan 
-1. 
+1. Run command __terraform plan__
 1. When this command is executed, Terraform validates the syntax of configuration file and resource definitions against the specifications that are provided by the IBM Cloud Provider plug-in
+![plugin](s4.png)
+
 
 
