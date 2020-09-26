@@ -83,4 +83,8 @@ __NOTE :__ If there is any issues in the above step kindly manually place binary
 1. Must be in Terraform project directory and run command __terraform init__ . This will initialize terraform in the folder and now we can work with all commands to automate our IBM cloud resources.
 1. Once above step is executed successfully there will be message "Terraform has been successfully initialized!". If there is any issues please verify above steps
 
+## 6: Execute Plan 
+1. 
+1. When this command is executed, Terraform validates the syntax of configuration file and resource definitions against the specifications that are provided by the IBM Cloud Provider plug-in
+
 
