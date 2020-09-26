@@ -54,20 +54,22 @@ __NOTE :__ If there is any issues in the above step kindly manually place binary
    ```
 ## Step 4: Lets create IBM Cloud Foundry resource
 1. In the same directory where you stored the __terraform.tfvars__ and __provider.tf__ files, create a Terraform configuration file and name it __configure.tf__
-   ```
-   data "ibm_space" "space" {
-     org   = "mahsankhan@ibm.com"
-     space = "dev"
-   }
+1. Kindly confirm if you have avaialable org and space. If not flow the steps to create one [here](https://cloud.ibm.com/docs/cloud-foundry?topic=cloud-foundry-create_orgs#:~:text=In%20the%20IBM%20Cloud%20Foundry,identify%20at%20least%20one%20user)
+   
+  ```
+  data "ibm_space" "space" {
+  org   = "Digital_work"
+  space = "check"
+}
 
-   resource "ibm_app" "app" {
-     name                 = "my-app"
-     space_guid           = data.ibm_space.space.id
-     app_path             = "hello.zip"
-     wait_timeout_minutes = 90
-     buildpack            = "sdk-for-nodejs"
-   }
+resource "ibm_app" "app" {
+  name                 = "my-app"
+  space_guid           = data.ibm_space.space.id
+  app_path             = "simple_app.zip"
+  buildpack            = "sdk-for-nodejs"
+}
    ```
+   
    
    The configuration file includes the following definition blocks:
    
