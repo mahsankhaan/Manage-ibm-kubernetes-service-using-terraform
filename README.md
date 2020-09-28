@@ -106,3 +106,4 @@ __NOTE :__ If there is any issues in the above step kindly manually place binary
 1. Open cluster dashboard and click __access__ 
 1. Run 1-3 commands on terminal to access the cluster
 1. If everything is fine we will get the message "The configuration for btou5t4d0p.. was downloaded successfully".
+1. Run command __ibmcloud ks worker ls --cluster test__ and you can see the cluster details.
