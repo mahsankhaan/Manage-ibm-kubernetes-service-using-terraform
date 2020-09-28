@@ -80,7 +80,7 @@ __NOTE :__ If there is any issues in the above step kindly manually place binary
    
    __hardware__ : The level of hardware isolation for  worker node Use "dedicated" to have available physical resources dedicated to you only, or "shared" to allow                   physical resources to be shared with other IBM customers
    
-  We can create many resources related to IBM Kubernetes resources. Check from [here](https://cloud.ibm.com/docs/terraform?topic=terraform-container-    resources#container-bind)    
+  We can create many resources related to IBM Kubernetes resources. Check from [here](https://cloud.ibm.com/docs/terraform?topic=terraform-container-resources)    
   
   List of all supported configurations for each resource, see [here](https://cloud.ibm.com/docs/terraform?topic=terraform-index-of-terraform-resources-and-data-sources)
 
