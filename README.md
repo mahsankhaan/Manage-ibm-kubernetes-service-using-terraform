@@ -52,30 +52,33 @@ __NOTE :__ If there is any issues in the above step kindly manually place binary
    ibmcloud_api_key    = var.ibmcloud_api_key
     }
    ```
-## Step 4: Lets create IBM Cloud Foundry resource
+## Step 4: Lets create IBM Kubernetes cluster
 1. In the same directory where you stored the __terraform.tfvars__ and __provider.tf__ files, create a Terraform configuration file and name it __configure.tf__
-1. Kindly confirm if you have avaialable org and space. If not flow the steps to create one [here](https://cloud.ibm.com/docs/cloud-foundry?topic=cloud-foundry-create_orgs#:~:text=In%20the%20IBM%20Cloud%20Foundry,identify%20at%20least%20one%20user)
+1. We can create many resources related to IBM Kubernetes resources. Check from  [here](https://cloud.ibm.com/docs/terraform?topic=terraform-container-resources#container-bind)
    
   ```
-  data "ibm_space" "space" {
-  org   = "Digital_work"
-  space = "check"
-}
+  resource "ibm_container_cluster" "testacc_cluster" {
+  name            = "test"
+  datacenter      = "dal10"
+  machine_type    = "free"
+  hardware        = "shared"
+  public_vlan_id  = "vlan"
+  private_vlan_id = "vlan"
 
-resource "ibm_app" "app" {
-  name                 = "my-app"
-  space_guid           = data.ibm_space.space.id
-  app_path             = "simple_app.zip"
-  buildpack            = "sdk-for-nodejs"
+  default_pool_size = 1
 }
    ```
    
    
    The configuration file includes the following definition blocks:
    
-   __Data:__ Use this block to retrieve information for an existing resource in your IBM Cloud account.
+   __name:__ Use this block to retrieve information for an existing resource in your IBM Cloud account.
    
-   __Resource__: Every resource block specifies the IBM Cloud resource that needs to provision.
+   __datacenter__: The datacenter where we want to provision the worker nodes.
+   
+   __machine_type__ : The machine type for our worker node. The machine type determines the amount of memory, CPU, and disk
+   
+   __hardware__ : The level of hardware isolation for  worker node Use __dedicated__ to have available physical resources dedicated to you only, or __shared__ to allow physical resources to be shared with other IBM customers
    
    Review the input parameters that you can specify for ibm cloud foundry resource. From [here](https://cloud.ibm.com/docs/terraform?topic=terraform-cloud-foundry-resources#cf-app)
     
