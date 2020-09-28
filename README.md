@@ -54,7 +54,7 @@ __NOTE :__ If there is any issues in the above step kindly manually place binary
    ```
 ## Step 4: Lets create IBM Kubernetes cluster
 1. In the same directory where you stored the __terraform.tfvars__ and __provider.tf__ files, create a Terraform configuration file and name it __configure.tf__
-1. We can create many resources related to IBM Kubernetes resources. Check from  [here](https://cloud.ibm.com/docs/terraform?topic=terraform-container-resources#container-bind)
+
    
   ```
   resource "ibm_container_cluster" "testacc_cluster" {
@@ -78,10 +78,10 @@ __NOTE :__ If there is any issues in the above step kindly manually place binary
    
    __machine_type__ : The machine type for our worker node. The machine type determines the amount of memory, CPU, and disk
    
-   __hardware__ : The level of hardware isolation for  worker node Use __dedicated__ to have available physical resources dedicated to you only, or __shared__ to allow physical resources to be shared with other IBM customers
+   __hardware__ : The level of hardware isolation for  worker node Use "dedicated" to have available physical resources dedicated to you only, or "shared" to allow                   physical resources to be shared with other IBM customers
    
-   Review the input parameters that you can specify for ibm cloud foundry resource. From [here](https://cloud.ibm.com/docs/terraform?topic=terraform-cloud-foundry-resources#cf-app)
-    
+  We can create many resources related to IBM Kubernetes resources. Check from [here](https://cloud.ibm.com/docs/terraform?topic=terraform-container-    resources#container-bind)    
+  
   List of all supported configurations for each resource, see [here](https://cloud.ibm.com/docs/terraform?topic=terraform-index-of-terraform-resources-and-data-sources)
 
 ## Step 5: Initialize Terraform
