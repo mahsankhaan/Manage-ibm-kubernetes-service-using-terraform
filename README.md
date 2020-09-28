@@ -104,6 +104,5 @@ __NOTE :__ If there is any issues in the above step kindly manually place binary
 1. Login IBM CLoud Platform
 1. On left menu click 3 dots and under __resources list__ we can see our cluster is up and running. 
 1. Open cluster dashboard and click __access__ 
-1. Open local terminal and login IBM Cloud CLI
-1. Run 2 & 3 commands on terminal to access the cluster
+1. Run 1-3 commands on terminal to access the cluster
 1. If everything is fine we will get the message "The configuration for btou5t4d0p.. was downloaded successfully".
