@@ -88,7 +88,7 @@ resource "ibm_app" "app" {
 ## 6: Execute Plan 
 1. Run command __terraform plan__
 1. When this command is executed, Terraform validates the syntax of configuration file and resource definitions against the specifications that are provided by the IBM Cloud Provider plug-in
-![plugin](s4.png)
+![plugin](s44.png)
 
 
 ## 7: Now finally apply all the configuration
