@@ -107,3 +107,8 @@ __NOTE :__ If there is any issues in the above step kindly manually place binary
 1. Run 1-3 commands on terminal to access the cluster
 1. If everything is fine we will get the message "The configuration for btou5t4d0p.. was downloaded successfully".
 1. Run command __ibmcloud ks worker ls --cluster test__ and you can see the cluster details.
+
+## Conclusion:
+In this tutorial, we learn the complete life cycle involve in Terraform (Infrastructure as a code) to manage our IBM Kubernetes Service with simple configuration files that make administrators and operational teams workload less by providing a simple human understandable format offered by HashiCorp.
+
+In the future, if any team plan to extend their resources and want to become a multi-cloud platform rather than understanding all the complex SDKs and API integration they only need to focus and maintain the declarative configuration files offered by the cloud provider.
