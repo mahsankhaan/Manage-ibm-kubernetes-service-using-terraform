@@ -43,7 +43,7 @@ __NOTE :__ If there is any issues in the above step kindly manually place binary
 ## Step 3 : Prepare Terraform environment
 1. Create [IBM Cloud API key](https://cloud.ibm.com/docs/account?topic=account-userapikey#create_user_key)
 1. Then create a Terraform project directory. The directory will hold all Terraform configuration files. (ex terraform_cf)
-1. Now in project directory, create a __terraform.tfvars__ file and add the __ibmcloud_api_key = "wQK0cf.."__ that was created earlier. The terraform.tfvars file is a Terraform variables file that you store on local machine. When you initialize the Terraform CLI, all variables that are defined in this file are automatically loaded into Terraform and then can be referenced  in every Terraform configuration file in the same project directory
+1. Now in project directory, create a __terraform.tfvars__ file and add __ibmcloud_api_key = "your-api-key"__ that was created in step 1. The terraform.tfvars file is a Terraform variables file that you store on local machine. When you initialize the Terraform CLI, all variables that are defined in this file are automatically loaded into Terraform and then can be referenced  in every Terraform configuration file in the same project directory
 1. In the same project directory, create a __provider.tf__ file and configure IBM as Terraform provider
    ```
    variable "ibmcloud_api_key" {}
