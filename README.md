@@ -10,7 +10,7 @@ Steps :
 1. [Install IBM Cloud Provider plug-in](#step-2-install-ibm-cloud-provider-plug-in)
 
 
-## Step 1 : Install the Terraform CLI 
+## Step 1. Install the Terraform CLI 
 1. Open the terminal and create a folder __terraform__ and navigate into that folder.
 
    ``` mkdir terraform && cd terraform ```
@@ -23,7 +23,7 @@ Steps :
 1. Run command __terraform__ to verify that the installation is successful
 __NOTE:__ Please restart the device if above command is not executed
 
-## Step 2 : Install IBM Cloud Provider plug-in
+## Step 2. Install IBM Cloud Provider plug-in
 Terraform uses the IBM Cloud Provider plug-in to securely communicate with the IBM Cloud REST API. To provision and work with IBM Cloud resources,we must install it.
 
 1. [Download the latest version of the IBM Cloud Provider binary package](https://github.com/IBM-Cloud/terraform-provider-ibm/releases)
