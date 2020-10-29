@@ -6,8 +6,8 @@ The Terraform __configuration files__ describe the resources that you need and h
 
 
 Steps :
-1. [Install the Terraform CLI](#step-1-Install-the-Terraform-CLI)
-1. Install IBM Cloud Provider plug-in
+1. [Install the Terraform CLI](#step-1-install-the-terraform-cli)
+1. [Install IBM Cloud Provider plug-in](#step-2-install-ibm-cloud-provider-plug-in)
 
 
 ## Step 1 : Install the Terraform CLI 
